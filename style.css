@@ -10,11 +10,15 @@
     --button-gradient-start: #6a11cb;
     --button-gradient-end: #2575fc;
     --button-text-color: #fff;
+    --input-bg-color: #f8f8f8;
+    --input-border-color: #ddd;
+    --input-text-color: #333;
 }
 
 body {
     font-family: sans-serif;
     display: flex;
+    flex-direction: column; /* Changed to column for multiple containers */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -31,6 +35,9 @@ body.dark-mode {
     --number-text-color: #f0f0f0;
     --lotto-ball-color: #444;
     --lotto-ball-text-color: #f0f0f0;
+    --input-bg-color: #3a3a3a;
+    --input-border-color: #555;
+    --input-text-color: #f0f0f0;
 }
 
 .theme-switcher {
@@ -52,7 +59,71 @@ body.dark-mode {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Added margin for separation */
 }
+
+.affiliate-inquiry {
+    margin-top: 20px;
+    width: 80%; /* Adjust width for the form container */
+    max-width: 600px; /* Max width for better readability */
+}
+
+.affiliate-inquiry h2 {
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: var(--button-gradient-end);
+    box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.2);
+    outline: none;
+}
+
+.affiliate-inquiry button[type="submit"] {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    color: var(--button-text-color);
+    background: linear-gradient(45deg, var(--button-gradient-start), var(--button-gradient-end));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.affiliate-inquiry button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
 
 h1 {
     margin-bottom: 30px;
@@ -122,5 +193,8 @@ h1 {
     #generate {
         padding: 12px 30px;
         font-size: 1em;
+    }
+    .affiliate-inquiry {
+        width: 95%;
     }
 }
