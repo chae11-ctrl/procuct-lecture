@@ -1,12 +1,15 @@
+# 따뜻한 덕담 운세 사이트
 
-# Lotto Number Generator
+## 개요
+이 웹사이트는 사용자에게 긍정적인 에너지와 따뜻한 위로를 전하는 랜덤 덕담(운세) 서비스입니다. 버튼을 누를 때마다 마음을 울리는 따뜻한 문구가 무작위로 나타납니다.
 
-## Overview
+## 구현된 기능
+*   **감성적인 UI/UX**: 부드러운 색감과 깔끔한 디자인으로 사용자에게 편안함을 제공합니다.
+*   **랜덤 덕담 생성**: 버튼을 클릭하면 엄선된 긍정적인 문구 중 하나가 화면에 나타납니다.
+*   **다크 모드 지원**: 사용자의 환경에 따라 눈이 편안한 다크 모드를 선택할 수 있습니다.
+*   **반응형 디자인**: 모바일과 데스크탑 어디서든 최적화된 화면을 보여줍니다.
 
-This is a simple web application that generates random lottery numbers.
-
-## Implemented Features
-
-*   **HTML Structure (`index.html`)**: The basic structure of the web page is created with a title, a button to generate numbers, and a section to display the numbers.
-*   **CSS Styling (`style.css`)**: The page is styled with a clean and modern design, featuring a visually appealing layout, responsive design for mobile devices, and a subtle background pattern. The lottery numbers are displayed in colored circles, and the "Generate Numbers" button has a gradient background and interactive hover effects.
-*   **JavaScript Logic (`main.js`)**: The core logic for generating lottery numbers is implemented. It generates 6 unique random numbers between 1 and 45, sorts them in ascending order, and displays them on the page when the "Generate Numbers" button is clicked.
+## 향후 계획 (현재 작업 진행 중)
+1.  `index.html` 구조를 로또 생성기에서 덕담 출력 화면으로 변경.
+2.  `style.css`를 따뜻하고 감성적인 분위기로 리뉴얼.
+3.  `main.js`에 다양한 덕담 문구 추가 및 랜덤 노출 로직 구현.
